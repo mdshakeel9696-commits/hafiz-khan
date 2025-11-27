@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hafiz Tour & Travels</title>
+  <meta name="description" content="Hafiz Tour and Travels — Bus tickets, flights, tour packages & car rentals. Contact: 9324465343" />
+  <style>
+    :root{--accent:#0b78d1;--muted:#6b7280;--card:#ffffff;--bg:#f4f7fb}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0;background:var(--bg);color:#0f172a}
+    header{background:linear-gradient(90deg, rgba(11,120,209,0.12), rgba(11,120,209,0.04));backdrop-filter: blur(2px);padding:18px}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:72px;height:72px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(135deg,var(--accent),#0bb3d1);color:white;font-weight:700;font-size:20px}
+    nav{margin-left:auto}
+    nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:28px 0}
+    .hero-grid{display:flex;flex-direction:column;gap:14px}
+    h1{font-size:28px;margin:0}
+    p.lead{color:var(--muted);margin:0;max-width:60ch}
+    .buttons{display:flex;gap:12px;margin-top:8px}
+    .btn{padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-outline{border:2px solid var(--accent);color:var(--accent);background:transparent}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(12,18,32,0.06)}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:18px 0}
+    .service h3{margin:8px 0 6px 0}
+    .packages{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:18px 0}
+    .package{padding:16px;border-radius:10px}
+    footer{padding:28px 0;color:var(--muted)}
+    .contact-grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .small{font-size:13px;color:var(--muted)}
+    @media(min-width:900px){.hero{grid-template-columns:1fr 420px}.hero-grid{padding-right:18px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center;">
+      <div class="brand">
+        <div class="logo" aria-hidden>
+          HT
+        </div>
+        <div>
+          <div style="font-weight:800;">Hafiz Tour &amp; Travels</div>
+          <div class="small">Hafiz Badruddin Khan — Baneli Gaon, Titwala East</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <h1>Reliable travel, simple booking — Hafiz Tour &amp; Travels</h1>
+        <p class="lead">We arrange bus &amp; flight tickets, curated tour packages, and comfortable car rentals across India. Fast support by phone or WhatsApp.</p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="#contact">Book Now</a>
+          <a class="btn btn-outline" href="https://wa.me/919324465343" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+        <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+          <div class="card small">📞 <strong>Phone:</strong> <a href="tel:+919324465343">+91 93244 65343</a></div>
+          <div class="card small">📧 <strong>Email:</strong> <a href="mailto:badruddinkhan937@gmail.com">badruddinkhan937@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0">Quick Booking</h2>
+        <form id="bookingForm">
+          <div style="display:flex;gap:8px;margin-bottom:8px">
+            <input required placeholder="Full name" name="name" style="flex:1;padding:10px;border-radius:8px;border:1px solid #e6eef9"/>
+          </div>
+          <div style="display:flex;gap:8px;margin-bottom:8px">
+            <input required placeholder="Phone" name="phone" style="flex:1;padding:10px;border-radius:8px;border:1px solid #e6eef9"/>
+            <input placeholder="Email (optional)" name="email" style="flex:1;padding:10px;border-radius:8px;border:1px solid #e6eef9"/>
+          </div>
+          <div style="margin-bottom:8px"><input placeholder="Travel date or preferred dates" name="dates" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef9"/></div>
+          <div style="margin-bottom:8px"><textarea placeholder="Message — routes, pickup point, passengers, budget" name="message" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef9;min-height:78px"></textarea></div>
+          <div style="display:flex;gap:8px;">
+            <button type="submit" class="btn btn-primary">Send Booking Request</button>
+            <a class="btn btn-outline" href="tel:+919324465343">Call +91 93244 65343</a>
+          </div>
+          <p class="small" style="margin-top:8px">Form will open your email app to send the booking request. Or message us on WhatsApp for faster replies.</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="card service">
+          <h3>Bus &amp; Train Tickets</h3>
+          <p class="small">We book reliable bus and train tickets with seat confirmation and fast support.</p>
+        </div>
+        <div class="card service">
+          <h3>Flight Booking</h3>
+          <p class="small">Compare airlines and book flights—even complex multi-city trips.</p>
+        </div>
+        <div class="card service">
+          <h3>Tour Packages</h3>
+          <p class="small">Customized holiday packages: family, honeymoon, and pilgrimage tours.</p>
+        </div>
+        <div class="card service">
+          <h3>Car Rentals &amp; Transfers</h3>
+          <p class="small">Airport transfers and local car rentals with trusted drivers.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="packages">
+      <h2>Sample Packages</h2>
+      <div class="packages">
+        <div class="card package">
+          <h3>Mumbai Getaway — 3 Nights</h3>
+          <p class="small">Hotel + local sightseeing. Ask for dates & pricing.</p>
+        </div>
+        <div class="card package">
+          <h3>Pune Weekend — 2 Nights</h3>
+          <p class="small">Weekend transfers and sightseeing options available.</p>
+        </div>
+        <div class="card package">
+          <h3>Pilgrimage Package</h3>
+          <p class="small">Group or individual pilgrimage planning — temples, travel, stays.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card contact-grid">
+        <div>
+          <p><strong>Owner:</strong> Hafiz Badruddin Khan</p>
+          <p><strong>Address:</strong> Baneli Gaon, Ambedkar Chawk, Titwala East, PinCode - 421102</p>
+          <p><strong>Phone:</strong> <a href="tel:+919324465343">+91 93244 65343</a></p>
+          <p><strong>Email:</strong> <a href="mailto:badruddinkhan937@gmail.com">badruddinkhan937@gmail.com</a></p>
+          <p class="small">Open: Mon–Sun — call or WhatsApp for fastest response.</p>
+          <p><a href="https://www.google.com/maps/search/?api=1&query=Baneli+Gaon+Ambedkar+Chawk+Titwala+East+421102" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div>
+          <h3>Send a message</h3>
+          <form onsubmit="openMail(event)">
+            <input required name="cname" placeholder="Your name" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef9;margin-bottom:8px" />
+            <input required name="cphone" placeholder="Phone" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef9;margin-bottom:8px" />
+            <textarea name="cmsg" placeholder="Message" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef9;min-height:110px"></textarea>
+            <div style="margin-top:8px;display:flex;gap:8px">
+              <button class="btn btn-primary" type="submit">Send Email</button>
+              <a class="btn btn-outline" href="https://wa.me/919324465343" target="_blank">WhatsApp</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div class="small">© Hafiz Tour &amp; Travels — Hafiz Badruddin Khan</div>
+      <div class="small">Designed for quick setup · Md Shakil Shaikh:Mo-9696854577</div>
+    </div>
+  </footer>
+
+  <script>
+    // Booking form: open user's email client with prefilled content
+    document.getElementById('bookingForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const f = e.target;
+      const name = encodeURIComponent(f.name.value || '');
+      const phone = encodeURIComponent(f.phone.value || '');
+      const email = encodeURIComponent(f.email.value || '');
+      const dates = encodeURIComponent(f.dates.value || '');
+      const message = encodeURIComponent(f.message.value || '');
+      const subject = encodeURIComponent('Booking Request from ' + (f.name.value || 'Customer'));
+      const body = encodeURIComponent('Name: '+ decodeURIComponent(name) + '\nPhone: '+ decodeURIComponent(phone) + '\nEmail: '+ decodeURIComponent(email) + '\nDates: '+ decodeURIComponent(dates) + '\nMessage: '+ decodeURIComponent(message));
+      // Using mailto: (works in most email clients)
+      window.location.href = 'mailto:badruddinkhan937@gmail.com?subject='+subject+'&body='+body;
+    });
+
+    function openMail(e){
+      e.preventDefault();
+      const f = e.target;
+      const name = encodeURIComponent(f.cname.value || '');
+      const phone = encodeURIComponent(f.cphone.value || '');
+      const msg = encodeURIComponent(f.cmsg.value || '');
+      const subject = encodeURIComponent('Message from website — '+(f.cname.value || 'Guest'));
+      const body = encodeURIComponent('Name: '+ decodeURIComponent(name) + '\nPhone: '+ decodeURIComponent(phone) + '\nMessage: '+ decodeURIComponent(msg));
+      window.location.href = 'mailto:badruddinkhan937@gmail.com?subject='+subject+'&body='+body;
+    }
+  </script>
+</body>
+</html>
